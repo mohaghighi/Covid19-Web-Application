@@ -9,21 +9,12 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import static java.time.temporal.ChronoUnit.DAYS;
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
 import java.util.SortedMap;
 import javax.persistence.PersistenceContext;
 import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
-import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -60,10 +51,13 @@ public class SearchData {
     }
     
     private Country getDataBase(String countryName){
+        //commeneted out to switch to JPA instead of in-memory
+        //return dataBase.get(countryName.toLowerCase());
         return DataRepo.findByName(countryName);
     }
     
     private Country[] getDataBase(){
+        
         Country[] countries=new Country[DataRepo.findAll().size()];
         return DataRepo.findAll().toArray(countries);
     }
