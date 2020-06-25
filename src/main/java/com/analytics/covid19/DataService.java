@@ -26,19 +26,19 @@ import org.springframework.stereotype.Component;
 @Component
 public class DataService {
     
-    private String CSVPath="/Users/Mo/Covid-19/global.csv";
+    //private String CSVPath="/Users/Mo/Covid-19/global.csv";
     //private String CSVPath="./global.csv";
     private CSVParser csvParser;
     
      
     //private String CSVPath_death="/Users/Mo/Covid-19/global_death.csv";
-    //private String CSVPath = "https://github.com/CSSEGISandData/COVID-19/raw/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv";
+    private String CSVPath = "https://github.com/CSSEGISandData/COVID-19/raw/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv";
     
     
     public DataService(){
         
-        csvParser=new CSVParser(new CSVSource(CSVPath));
-        //csvParser=new CSVParser(new URLSource(CSVPath));
+        //csvParser=new CSVParser(new CSVSource(CSVPath));
+        csvParser=new CSVParser(new URLSource(CSVPath));
     }
     
     
