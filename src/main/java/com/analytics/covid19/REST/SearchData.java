@@ -68,6 +68,10 @@ public class SearchData {
     
     ///------------------------- String REST/Get Request -------------------------------
     
+    @GetMapping("/hello/")
+    public String getCountry() {
+        return "hello world!";
+    }
     
     @GetMapping("/get/country/{countryName}")
     public Country getCountry(@PathVariable String countryName) {
