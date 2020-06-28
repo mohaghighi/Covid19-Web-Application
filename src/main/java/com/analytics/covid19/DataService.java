@@ -40,7 +40,14 @@ public class DataService {
         //csvParser=new CSVParser(new CSVSource(CSVPath));
         csvParser=new CSVParser(new URLSource(CSVPath));
     }
-    
+
+    public String getCSVPath() {
+        return CSVPath;
+    }
+
+    public void setCSVPath(String CSVPath) {
+        this.CSVPath = CSVPath;
+    }
     
     public SortedMap<String,Country> BuildDatabase(){
         

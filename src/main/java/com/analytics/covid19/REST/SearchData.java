@@ -73,6 +73,11 @@ public class SearchData {
         return "hello world!";
     }
     
+    @GetMapping("/get/source/")
+    public String getSource() {
+        return dataService.getCSVPath();
+    }
+    
     @GetMapping("/get/country/{countryName}")
     public Country getCountry(@PathVariable String countryName) {
         return getDataBase(countryName);
