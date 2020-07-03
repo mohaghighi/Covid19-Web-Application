@@ -70,7 +70,7 @@ public class SearchData {
     
     @GetMapping("/hello/")
     public String getCountry() {
-        return "hello world!";
+        return "hello world! \r\n";
     }
     
     @GetMapping("/get/source/")
