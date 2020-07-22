@@ -1,0 +1,13 @@
+com/analytics/covid19/Covid19Application.class
+com/analytics/covid19/parser/CSVParser.class
+com/analytics/covid19/REST/Request.class
+com/analytics/covid19/source/URLSource.class
+com/analytics/covid19/parser/DataParser.class
+com/analytics/covid19/DataService.class
+com/analytics/covid19/data/Country.class
+com/analytics/covid19/source/CSVSource.class
+com/analytics/covid19/JPA/CountryRepository.class
+com/analytics/covid19/REST/SearchData.class
+com/analytics/covid19/source/DataSource.class
+com/analytics/covid19/data/Data.class
+com/analytics/covid19/data/Function.class
