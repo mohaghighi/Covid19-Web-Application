@@ -105,8 +105,13 @@ curl http://localhost:8082
 #### What is a container? 
 > Containers are executable units of software in which application code is packaged, along with its libraries and dependencies, in common ways so that they can be run anywhere, whether it be on desktop, traditional IT, or the cloud.
 
-#### What is Docker?
+### What is Docker?
 > “Docker is the de facto standard to build and share containerized apps - from desktop, to the cloud”
+You may ask why Docker?  
+Modern application development and app modernisation techniques consist of three important stages of Build, Deploy and Manage.
+Docker plays a vital role in the build stage, and even partially the deployment phase. 
+As you can see from this slide, for stages we're going to follow in this workshop series, Docker is responsible for all initial steps. 
+![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide32.png)
 
 ### Technology vs. Toolkit
 containers have been around for quite some time, and developers can create 
@@ -117,18 +122,16 @@ containers using simple commands and work-saving automation.
 
 ![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide35.png)
 
-#### Docker Image vs. Docker Container
+### Docker Image vs. Docker Container
 > Docker container image is a lightweight, standalone, executable package of software that includes everything needed to run an application: code, runtime, system tools, system libraries and settings. (only interacting with designated resources)
 
 > Container ****<ins>images become containers at runtime</ins>**** and in the case of Docker containers - images become containers when they run on Docker.
 
 ![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide36.png)
-
 #### What is a Dockerfile?
-A set of build instructions to build the image in a file called "dockerfile". 
-  
+A set of build instructions to build the image in a file called "dockerfile".  
 #### Craft your Dockerfile
-![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide36.jpeg)
+![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide40.png)
 
 In the case of our Data Parser Spring Boot application: 
 ```
@@ -138,8 +141,23 @@ COPY ${JAR_FILE} app.jar
 ENTRYPOINT ["java","-jar","/app.jar"]
 
 ```
+Dockerfile for Node.js application:
+```
+FROM node:12
+COPY package*.json ./
+RUN npm install
+ENTRYPOINT [”node",”app.js"]
+```
+Dockerfile for Python application:
+```
+FROM python:3
+COPY package.py ./
+RUN pip install pystrich
+ENTRYPOINT [”python",”./app.py"]
+```
 save the file as <ins>dockerfile</ins> with no file extension.
 
+### Building Docker Image from the Dockerfile
 ```bash
 docker build -t [image name:v1] [path]
 ```
@@ -160,14 +178,108 @@ if you add -al, you can view all running and stopped containers
 ```
 docker ps -al 
 ```
-Now let's go ahead and run our container:
+Here's the command for running the docker container
 ```
 docker run -p [PortHost:PortContainer] [imageName] -d --rm 
 ```
+Now let's go ahead and run our container on port 8082:
+```
+docker run -p 8082:8082 myapp:v1 -d 
+```
 -d and --rm flags will respectively run the docker in detached, mode and replace an existing docker image of the same name with the name one.  
+We can ping the application by invoking the /hello/ REST endpoint:
 ```
-docker run -p 8082:8082 myapp:v1 -d --rm 
+curl localhost:8082/hello/ 
 ```
+#### Build and Run the UI App
+
+The UI application can be retrieved from here:
+<https://github.com/mohaghighi/Covid19-UI.git>
+
+Now let's build the UI app and call it myui:v1
+Dockerfile is the same as the one we used for Data Parser app but changing the name to ***"myui"***
+```bash
+docker build -t myui:v1 .
+```
+> in case you haven't run the maven build and packaged the UI App, run this where mvnm file is located
+```
+./mvnm clean install 
+```
+Now let's run the UI app on port 8081:
+```
+docker run -p 8082:8082 myapp:v1 -d 
+```
+Open your browser and navigate to 
+```
+localhost:8081
+```
+From the UI, click on connect on the top left hand corner and enter:
+```
+http://localhost:8082
+```
+
+As you may have seen, you got an error indicating that the server is not responding. 
+There reason is, we can connect to containers directly thorugh Docker, but docker containers cannot discover or comunicate with each other.
+![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide45.png)
+
+now let's try to ssh into our one of the docker containers and try to connect to the other one to identify the problem.
+To simulate the issue that we've just expereinced with the UI app, let's ssh into our UI and try to connect to our data parser from within that container. 
+![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide46.png)
+
+```docker exec [container name/ID] -it
+```
+Here how we ssh into UI app
+```
+docker exec -it myui:v1 /bin/bash 
+```
+Now let's connect from within the container and see if it works
+```
+curl localhost:8082/hello/ 
+```
+As you can see that doesn't work either.  
+> containers need to be connected to the same network in order to communicate with each other
+
+You can inspect your container to investigate the matter by looking for the network wihtin both containers.
+
+```
+docker inspect [container name]
+```
+As you can see our UI and Parser apps are not part of the same network. 
+![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide48.png)
+
+Let's create a network and instruct our containers to connect to it
+```docker network create test 
+```
+let's stop our docker containers:
+```docker stop [container id]
+```
+Let's run our containers again, this time instructing them to join the new network we've just created
+```docker run -p [PortHost:PortContainer] [imageName] --net=test
+```
+Run UI application on test network:
+```docker run -p 8081:8081 myui:v1 --net=test
+```
+Run parser application on test network:
+```docker run -p 8082:8082 myapp:v1 --net=test
+```
+Let's inspect our containers again and get their IP addresses based on thier new network
+```docker inspect [container name/ID]
+```
+
+if we try to ping our applications again, they should work fine.  
+Go ahead and connect to the parser form the UI app to verify that. 
+
+In the next part we will be using minikube to spin up a single node kubernetes cluster. If we build all our images on your host docker machine, it'd be quite difficult to transfer your images from your host into minikube.  
+one solution is to use minikube's docker daemon to build your docker images.  
+> you need to set your environmental parameter to use miinkube docker. This command will let you do that:
+```
+eval $(minikube docker-env) 
+```
+This step is not needed here, is intended to let you know what we will use minikube's docker.
+![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide55.png)
+
+
+
 
 --- 
 ## Part 3: Deploy, Run and Maange your Docker Containers with Kubernetes. 
