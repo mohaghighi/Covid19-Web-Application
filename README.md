@@ -404,15 +404,85 @@ minikube ssh
 ```
 curl [Pod IP]:[container port]/hello/  
 ```
+### Different types of Services for exposing applications
 
-#### Starting Kubernetes dashbaord
+**ClusterIP**: This default type exposes the service on a cluster-internal IP. You can reach the service only from within the cluster. 
+
+**NodePort**: This type of service exposes the service on each node’s IP at a static port. A ClusterIP service is created automatically, and the NodePort service will route to it. From outside the cluster, you can contact the NodePort service by using “<NodeIP>:<NodePort>”.
+
+**LoadBalancer**: This service type exposes the service externally using the load balancer of your cloud provider. The external load balancer routes to your NodePort and ClusterIP services, which are created automatically
+
+### Different types of ports for accessing application from within the cluster, from outside the node and form outside the cluster.
+
+**NodePort**: This setting makes the service visible outside the Kubernetes cluster by the node’s IP address and the port number declared in this property. The service also has to be of type NodePort (if this field isn’t specified, Kubernetes will allocate a node port automatically).
+
+**Port**: Expose the service on the specified port internally within the cluster. That is, the service becomes visible on this port, and will send requests made to this port to the pods selected by the service.
+
+**TargetPort**: This is the port on the pod that the request gets sent to. Your application needs to be listening for network requests on this port for the service to work.
+
+![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide86.png)
+
+### Exposing application with type LoadBalancer
 ```
-kubectl minikube dashboard
+kubectl expose deployment [deployment Name] [--port=8082 ] --type=LoadBalancer
 ```
-#### Starting Kubernetes dashbaord 
+#### Getting the Cluster-IP for the Kubernetes Cluster
 ```
-kubectl minikube dashboard
+kubectl cluster-info  
 ```
+#### This command doesn't work as Minikube doesn't allocate the external IP address
+```
+curl [LoadBalancer External IP]:[Node Port]/hello/ 
+```
+(minikube is a single node cluster. therefore its IP address is the same node IP)
+#### Pinging the container using minikube cluster IP instead worker node IP and NodePort
+```
+curl [kubernetes Cluster-IP]:[Node Port]/hello/ 
+```
+#### Now let's try to access the pod from within the cluster
+```
+minikube ssh 
+```
+#### Using the Load Balancer IP and container Port
+```
+curl [LoadBalancer Cluster IP(internal)]:[Port]/hello/ 
+```
+
+![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide138.png)
+
+Rolling updates allow Deployments' update to take place with zero downtime by incrementally updating Pods instances with new ones. Performing updates without affecting application availability.
+
+![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide139.png)
+
+In this part we're going to update our image to the parser for covid-19 mortality data reflect the number of death in every country country and region.  
+```
+kubectl set image deployment/[deployment name]  [container]=[new image]
+```
+
+Make sure you use the container name in the above command to update the image in it. 
+To get the container name, use: 
+```
+kubectl get deployment -o wide
+```
+verify the deployment is updated by pinging the app
+```
+curl ip:port/hello/
+curl ip:port/get/country/data/germany/
+```
+
+To rollback to the previous version use:
+```
+kubectl rollout undo deployment/[deployment Name] 
+```
+optional: You can add --to-revision=n in order to rollback to a specific verison
+```
+kubectl rollout undo deployment/[deployment Name] --to-revision=2
+```
+checkout the rollout status 
+```
+kubectl rollout status deployment/[deployment Name]
+```
+
 
 
 --- 
