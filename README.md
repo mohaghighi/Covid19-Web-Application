@@ -15,7 +15,7 @@ You can use this application as a template for designing your own analytical mic
 
 This workshop series will be focused on: 
 
-[Part 1: Overall architecture of the Parser and UI applications](
+[Part 1: Overall architecture of the Parser and UI applications](https://github.com/mohaghighi/Covid19-Web-Application/blob/master/README.md#part-1-overall-architecture-of-the-parser-and-ui-applications)
 [Part 2: Build your Microservice container with Docker]
 [Part 3: Deploy and manage your application with Kubernetes]
 [Part 4: Deploy and manage your application with OpenShift on IBM Cloud] 
