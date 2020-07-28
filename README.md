@@ -63,6 +63,8 @@ including 2 x data parsers for positive cases and mortality rates per country, a
 Interface for displaying data, as well as invoking those APIs through a number of sample 
 functions. 
 
+![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/UI.png)
+
 As you can see from the slide, data is fetched from Johns Hopkins University's repo (which is an authentic source of covid-19), and is stored in our local data repository.  
 Here is a list of sample API endpoints as we'll test them out shortly. 
 ![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide19.png)
