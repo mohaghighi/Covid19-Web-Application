@@ -261,6 +261,8 @@ IBM has added unique security and productivity capabilities designed to eliminat
 
 Once you've signed up on IBM Cloud and sign into your account by visiting cloud.ibm.com, you need to navigate through ibm cloud dashboard and choose OpenShift. Then go ahead and create your cluster. Once your cluster is provisioned and ready, it'll be listed in this table. 
 
+### Download and Install prerequisites
+
 Install IBM CLI tools
 ```
 curl -sL https://ibm.biz/idt-installer | bash
@@ -281,6 +283,8 @@ Set your environmental parameters for kubectl
 ```
 mv /<filepath>/kubectl/usr/local/bin/kubectl
 ```
+### Login to IBM Cloud and check your installed plugins
+
 Login to IBM Cloud
 ```
 ibmcloud login
@@ -382,6 +386,7 @@ Updates one or more fields of an object (The changes is a JSON or YAML expressio
 ```
 oc patch <object_type> <object_name> -p <changes>
 ```
+### Create Deployment using an image from IBM Cloud Container Registry
 
 Create a deployment by instructing the OpenShift cluster to pull an image from ICR
 ```
@@ -397,7 +402,9 @@ Get the list of pods (same as Kubectl)
 ```
 oc get pods
 ``` 
-    
+
+### Expose the current deployment to the Internet
+
 Expose the deployment on container port 8082 with LoadBalancer service type
 ```
 oc expose deployment/mytestservice --port=8082 --type=LoadBalancer
@@ -456,6 +463,7 @@ Get secrets in 'default' serviceaccount in project []
 ```
 oc describe serviceaccount default -n [project]
 ```
+### Verify that the new project can pull images from ICR
 
 Create a deployment by pulling an image from ICR into the new peoject
 ```
