@@ -23,7 +23,6 @@ This workshop series will be focused on:
 ## Part 6: Build your CI/CD pipelines with Jenkins and Tekton. 
 
 
-
 Here is what you will learn by the end of this workshop series:  
   
 ![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide2.jpeg)
@@ -80,7 +79,8 @@ In this section you will learn:
   - SSH into Docker images
   - Connecting Docker containers
   - Inspect Docker Containers
-  
+
+![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide26.png)
   
 ### Clone The Repositories
 ```
@@ -108,12 +108,21 @@ curl http://localhost:8082
 #### What is Docker?
 > “Docker is the de facto standard to build and share containerized apps - from desktop, to the cloud”
 
-![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide32.jpeg)
+### Technology vs. Toolkit
+containers have been around for quite some time, and developers can create 
+containers without Docker --  but Docker makes it easier, simpler, and safer to 
+build, deploy, and manage containers. Docker is essentially the first toolkit that due 
+to its simplicity, enabled all developers to build, deploy, run, update, and stop 
+containers using simple commands and work-saving automation. 
+
+![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide35.png)
 
 #### Docker Image vs. Docker Container
 > Docker container image is a lightweight, standalone, executable package of software that includes everything needed to run an application: code, runtime, system tools, system libraries and settings. (only interacting with designated resources)
 
 > Container ****<ins>images become containers at runtime</ins>**** and in the case of Docker containers - images become containers when they run on Docker.
+
+![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide36.png)
 
 #### What is a Dockerfile?
 A set of build instructions to build the image in a file called "dockerfile". 
