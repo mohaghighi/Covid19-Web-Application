@@ -476,21 +476,26 @@ oc get services
 ```
 ### Scale and Replicas
 
+in this section we will create replicas of our deployed application. Openshift will considers the instructed number of instances as the desired state. If any pod fails or destroyed, OpenShift will bring that back up to keep the number of instances intact in order to meet the load.
+
 ![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide136.png)
 
-verify that image has been pulled and deployed successfully
+Sclae the application by creating 3 more instances 
 ```
-oc scale --replicas=0 deployment/[deployed resource]
+oc scale --replicas=4 deployment/[deployed resource]
 ```
 Get the replicas
 ```
 oc get rs
 ```
-Verify the number of running pods
+Verify the number of running pods (reflecting the number of instances)
 ```
 oc get pods –o wide
 ```
 ### Rolling out updates and Rolling back
+![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide138.png)
+
+Rolling updates allow Deployments' update to take place with zero downtime by incrementally updating Pods instances with new ones. Performing updates without affecting application availability.
 
 ![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide139.png)
 
@@ -525,8 +530,6 @@ oc rollout status deployment/[deployment Name]
 
 ![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide141.png)
 
-
-![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide138.png)
 
 ## Part 5: Build, Share and Deploy Your Applications with OpenShift's CodeReady Workspace.
   
