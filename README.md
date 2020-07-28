@@ -482,9 +482,42 @@ checkout the rollout status
 ```
 kubectl rollout status deployment/[deployment Name]
 ```
+### What is YAML?
+YAML is a human-readable, data serialization standard for specifying configuration-type information. 
+YAML can be used for common use cases such as:
 
+- Configuration files
+- Inter-process messaging
+- Cross-language data sharing
 
+![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide95.png)
 
+Kubernetes resources are represented as objects and can be expressed in **YAML** or **JSON** format
+Examples: 
+Print deployment as Yaml
+```
+kubectl get deployment –o yaml [json]
+```
+Print services as Yaml
+```
+kubectl get services –o yaml
+```
+## Using YAML to create resources 
+![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide97.png)
+![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide98.png)
+![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide99.png)
+![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide100.png)
+![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide101.png)
+
+### Once YAML file is crafted, here is how to apply it:
+```
+kubectl apply -f [fileName].yaml
+```
+#### Get logs of applying YAML file
+```
+kubectl log –l app=[container name]
+```
+![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide103.png)
 --- 
 ## Part 4: Build, Deploy and Manage your Microservices Application with OpenShift.
   
