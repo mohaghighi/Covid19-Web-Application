@@ -4,14 +4,25 @@ We have seen a range data published on the impact of various parameters on the s
 Have you ever wanted to run your own analytics on covid-19 data, and examine data sets in order to draw a particular conclusion? Or possibly evaluate a theory, that may or not may not be true. Such analytics could potentially shed light on the impacts of various factors, and you can apply them to a variety of problems.   
 Maybe you'd like to see the impact of temperature and humidity on the spread of covid-19 in different countries?  
 
-teach you how to build, deploy and manage web applications with kubernetes and openshift.
+This is a multipart workshop series on building, 
+deploying and managing microservices applications with Kubernetes and openshift. 
 
-Our workshop series is around covid-19 data retrieval, parsing and analytic. This is a series of 5 x hands-on workshops, teaching you how to retrieve covid-19 data from an authentic source, make them securely available through REST APIS on kubernetes and Openshift.  
-The main parser application is written in Spring Boot, but we will add more features and apply analytical services on the data in the form of microservices written in different programming languages.  
+Our workshop series is around covid-19 data retrieval, parsing and analytic. This is a series of 7 x hands-on workshops, teaching you how to retrieve covid-19 data from an authentic source, make them securely available through REST APIS on kubernetes and Openshift.  
+The primary applications are developed in Java Spring Boot, but we will add more features and apply analytical services on the data in the form of microservices written in different programming languages.  
 
-Our application also comes with User Interface that connect to our parser and invokes the API endpoints to showcase the power of microservices running as conainers on Kubernetes and Openshift. 
+In this workshop series, firstly take a look at the key features of our application and how it was developed in microsevices architecture. We'll then explore ways to contianerise our application with Docker. in Lab 3, We'll deploy and manage our application with Kubernetes. In Part 4, we'll deploy our application onto Openshift on IBM Cloud using OpenShift CLI tool and Web Console. In Lab 6, we'll set up a CodeReady Workspace to share an instance of workspace with others with ero configuration on the recipient side. In Lab 7, We'll build and test out application on a local version of Openshift Cluster, CodeReady containers. Finally, in part 8 we'll automate our CI/CD pipeline to push our code into production with zero downtime.
 
-You can use this application as a template for designing your own analytical microservices and deploy onto Kubernetes. 
+As a reminder, all the steps taught in this course are generic and applicable to 
+application developed in any programming languages or platforms. but to simplify 
+our journey and making it more use-case oriented, our course is designed around a 
+covid-19 data analytic application. 
+
+At the beginning of every part, we take a quick look at our application. This is to 
+showcase the end result of what we do together in every part with respect the primary subject of each part.
+
+Our application also comes with a frontend <User Interface>(https://github.com/mohaghighi/Covid19-UI.git) that connects to our parsers and invokes the API endpoints to display data and showcase the power of microservices running as conainers on Kubernetes and Openshift. 
+
+This application has been designed as a template for designing your own analytical microservices and deploying onto Kubernetes. 
 
 This workshop series will be focused on: 
 
@@ -43,7 +54,22 @@ In this section you will learn:
   - Why microservices?
   - Orchestration with Kubernetes
   
-  
+![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide4.png)
+Our application has been developed in Java and Spring Boot framework. It provides 
+us with a number of API endpoints for retrieving covid-19 data per region, country, 
+dates and periods. 
+It comes with a number of containerised microservices, 
+including 2 x data parsers for positive cases and mortality rates per country, and a User 
+Interface for displaying data, as well as invoking those APIs through a number of sample 
+functions. 
+
+As you can see from the slide, data is fetched from Johns Hopkins University's repo (which is an authentic source of covid-19), and is stored in our local data repository.  
+Here is a list of sample API endpoints as we'll test them out shortly. 
+![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide19.png)
+
+
+
+
 ## Prerequisites
 
 Spring Boot v2.2 - https://spring.io/guides/gs/spring-boot/ 
@@ -61,6 +87,20 @@ Minikube Latest - https://kubernetes.io/docs/tasks/tools/install-minikube/
 CodeReady Containers - https://developers.redhat.com/products/codeready-containers 
 
 (Optional) OpenShift v4.3 on IBM Cloud - https://www.ibm.com/cloud/openshift 
+
+
+### Microservices
+![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide14.png)
+
+![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide16.png)
+
+By the end of this series, you'll have a microservices application with 4 x containers running in your Kubernetes/OpenShift cluster. 
+![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide17.png)
+
+- Data Parser written in Java. 
+- UI frontend written in Java to generate HTML and Node.js. 
+- Analytical application wrtittn in Python Flask.  
+- Data Visulization application written in Node.js
 
 
 --- 
