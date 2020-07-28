@@ -15,13 +15,13 @@ You can use this application as a template for designing your own analytical mic
 
 This workshop series will be focused on: 
 
-## Part 1: Overall architecture of the Parser and UI applications.  
-## Part 2: Build your Microservice container with Docker.  
-## Part 3: Deploy and manage your application with Kubernetes. 
-## Part 4: Deploy and manage your application with managed OpenShift on IBM Cloud. 
-## Part 5: Build, Deploy and Share your application with CodeReady Workspaces. 
-## Part 6: Deploy and manage your application with CodeReady Containers. 
-## Part 7: Build your CI/CD pipelines with Jenkins and Tekton. 
+[Part 1: Overall architecture of the Parser and UI applications](
+[Part 2: Build your Microservice container with Docker]
+[Part 3: Deploy and manage your application with Kubernetes]
+[Part 4: Deploy and manage your application with OpenShift on IBM Cloud] 
+[Part 5: Build, Deploy and Share with CodeReady Workspaces]
+[Part 6: Build and Test your application with CodeReady Containers] 
+[Part 7: Build your CI/CD pipelines with Jenkins and Tekton]
 
 
 Here is what you will learn by the end of this workshop series:  
