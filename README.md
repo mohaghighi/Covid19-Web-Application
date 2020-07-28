@@ -15,13 +15,13 @@ You can use this application as a template for designing your own analytical mic
 
 This workshop series will be focused on: 
 
-[Part 1: Overall architecture of the Parser and UI applications](https://github.com/mohaghighi/Covid19-Web-Application/blob/master/README.md#part-1-overall-architecture-of-the-parser-and-ui-applications)
-[Part 2: Build your Microservice container with Docker]
-[Part 3: Deploy and manage your application with Kubernetes]
-[Part 4: Deploy and manage your application with OpenShift on IBM Cloud] 
-[Part 5: Build, Deploy and Share with CodeReady Workspaces]
-[Part 6: Build and Test your application with CodeReady Containers] 
-[Part 7: Build your CI/CD pipelines with Jenkins and Tekton]
+[Part 1: Overall architecture of the Parser and UI applications](https://github.com/mohaghighi/Covid19-Web-Application/blob/master/README.md#part-1-overall-architecture-of-the-parser-and-ui-applications)  
+[Part 2: Build your Microservice container with Docker](https://github.com/mohaghighi/Covid19-Web-Application/blob/master/README.md#part-2-build-your-microservice-container-with-docker)  
+[Part 3: Deploy and manage your application with Kubernetes](https://github.com/mohaghighi/Covid19-Web-Application/blob/master/README.md#part-3-deploy-run-and-maange-your-docker-containers-with-kubernetes)  
+[Part 4: Deploy and manage your application with OpenShift on IBM Cloud](https://github.com/mohaghighi/Covid19-Web-Application/blob/master/README.md#part-4-build-deploy-and-manage-your-microservices-application-with-openshift)   
+[Part 5: Build, Deploy and Share with CodeReady Workspaces](https://github.com/mohaghighi/Covid19-Web-Application/blob/master/README.md#part-5-build-deploy-and-share-your-applications-with-codeready-workspaces)  
+[Part 6: Build and Test your application with CodeReady Containers](https://github.com/mohaghighi/Covid19-Web-Application/blob/master/README.md#part-6-build-and-test-your-applications-with-codeready-containers)  
+[Part 7: Build your CI/CD pipelines with Jenkins and Tekton](https://github.com/mohaghighi/Covid19-Web-Application/blob/master/README.md#part-7-build-your-cicd-pipelines-with-jenkins-and-tekton)  
 
 
 Here is what you will learn by the end of this workshop series:  
