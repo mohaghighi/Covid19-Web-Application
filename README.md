@@ -15,21 +15,21 @@ You can use this application as a template for designing your own analytical mic
 
 This workshop series will be focused on: 
 
-[Part 1: Overall architecture of the Parser and UI applications](##part1). 
-[Part 2: Build your Microservice container with Docker](##part2). 
+## Part 1: Overall architecture of the Parser and UI applications.  
+## Part 2: Build your Microservice container with Docker.  
 ## Part 3: Deploy and manage your application with Kubernetes. 
 ## Part 4: Deploy and manage your application with managed OpenShift on IBM Cloud. 
-## Part 5: Deploy and manage your application with CodeReady Containers. 
-## Part 6: Build your CI/CD pipelines with Jenkins and Tekton. 
+## Part 5: Build, Deploy and Share your application with CodeReady Workspaces. 
+## Part 6: Deploy and manage your application with CodeReady Containers. 
+## Part 7: Build your CI/CD pipelines with Jenkins and Tekton. 
 
 
 Here is what you will learn by the end of this workshop series:  
   
 ![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide2.png)
 --- 
-<a name="part1"/>
 ## Part 1: Overall architecture of the Parser and UI applications. 
-</a>
+
 
 ### Agenda
 In this section you will learn:
@@ -64,7 +64,6 @@ CodeReady Containers - https://developers.redhat.com/products/codeready-containe
 
 
 --- 
-<a name="part2"/>
 ## Part 2: Build your Microservice container with Docker. 
   
 ### Agenda
@@ -279,8 +278,6 @@ eval $(minikube docker-env)
 ```
 This step is not needed here, is intended to let you know what we will use minikube's docker.
 ![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide55.png)
-
-
 
 
 --- 
@@ -1006,26 +1003,44 @@ oc rollout status deployment/[deployment Name]
 
 ![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide141.png)
 
+--- 
+## Part 5: Build, Deploy and Share Your Applications with CodeReady Workspaces. 
 
-## Part 5: Build, Share and Deploy Your Applications with OpenShift's CodeReady Workspace.
+### Agenda
+In this section you will learn:
+- What is CodeReady workspaces?
+- Install CodeReady Workspaces
+  - Operators in OpenShift
+  - OperatorHub
+  - Install CRW Operator
+  - Create CheCluster
+- Your first workspace
+  - Sample stacks
+  - Import from Git
+  - In-browser IDE
+  - Compile/Run/Expose
+- Workspace admin
+- Share your Workspace
+
+---
+## Part 6: Build, and Test Your Applications with CodeReady Containers.
   
 ### Agenda
 In this section you will learn:
-- Install/download prerequisites 
-- Package Java Maven application
-- Test Java application
-- Docker
-  - Dockerfile
-  - Build Docker image
-  - Run Docker containers
-  - Use Kubernetes Docker daemon
-  - Docker Registry 
-  - SSH into Docker images
-  - Connecting Docker containers
-  - Inspect Docker Containers
+- What is CodeReady Containers?
+  - Install & Setup
+  - Start CodeReady Containers
+- Build on CodeReady Containers
+  - From Git
+  - From Templates
+  - From Containers
+  - From Dockerfile
+- Deploy with Source to Image from the console
+- View our resources from the CLI
+
   
 --- 
-## Part 6: Build and Test Your Microservices Application with OpenShift on Your Own Machine with CodeReady Containers
+## Part 7: Build your CI/CD pipelines with Jenkins and Tekton. 
   
 ### Agenda
 In this section you will learn:
