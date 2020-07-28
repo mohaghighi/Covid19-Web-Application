@@ -25,7 +25,7 @@ This workshop series will be focused on:
 
 Here is what you will learn by the end of this workshop series:  
   
-![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide2.jpeg)
+![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide2.png)
 --- 
 
 ## Part 1: Overall architecture of the Parser and UI applications. 
