@@ -15,12 +15,12 @@ You can use this application as a template for designing your own analytical mic
 
 This workshop series will be focused on: 
 
-[Part1](### Part 1: Overall architecture of the Parser and UI applications) 
-### Part 2: Build your Microservice container with Docker. 
-### Part 3: Deploy and manage your application with Kubernetes. 
-### Part 4: Deploy and manage your application with managed OpenShift on IBM Cloud. 
-### Part 5: Deploy and manage your application with CodeReady Containers. 
-### Part 6: Build your CI/CD pipelines with Jenkins and Tekton. 
+[## Part 1: Overall architecture of the Parser and UI applications. ](##part1)
+## Part 2: Build your Microservice container with Docker. (##part2)
+## Part 3: Deploy and manage your application with Kubernetes. 
+## Part 4: Deploy and manage your application with managed OpenShift on IBM Cloud. 
+## Part 5: Deploy and manage your application with CodeReady Containers. 
+## Part 6: Build your CI/CD pipelines with Jenkins and Tekton. 
 
 
 
@@ -28,9 +28,8 @@ Here is what you will learn by the end of this workshop series:
   
 ![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide2.jpeg)
 --- 
-<a name="Part1"/>
+<a name="part1"/>
 ## Part 1: Overall architecture of the Parser and UI applications. 
-</a>
 
 ### Agenda
 In this section you will learn:
