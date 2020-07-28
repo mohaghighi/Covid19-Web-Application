@@ -157,4 +157,77 @@ docker run -p [PortHost:PortContainer] [imageName] -d --rm
 docker run -p 8082:8082 myapp:v1 -d --rm 
 ```
 
-
+--- 
+## Part 3: Deploy, Run and Maange your Docker Containers with Kubernetes. 
+  
+### Agenda
+In this section you will learn:
+- Install/download prerequisites 
+- Package Java Maven application
+- Test Java application
+- Docker
+  - Dockerfile
+  - Build Docker image
+  - Run Docker containers
+  - Use Kubernetes Docker daemon
+  - Docker Registry 
+  - SSH into Docker images
+  - Connecting Docker containers
+  - Inspect Docker Containers
+  
+  
+--- 
+## Part 4: Build, Deploy and Manage your Microservices Application with OpenShift.
+  
+### Agenda
+In this section you will learn:
+- Install/download prerequisites 
+- Package Java Maven application
+- Test Java application
+- Docker
+  - Dockerfile
+  - Build Docker image
+  - Run Docker containers
+  - Use Kubernetes Docker daemon
+  - Docker Registry 
+  - SSH into Docker images
+  - Connecting Docker containers
+  - Inspect Docker Containers
+  
+--- 
+## Part 5: Build, Share and Deploy Your Applications with OpenShift's CodeReady Workspace.
+  
+### Agenda
+In this section you will learn:
+- Install/download prerequisites 
+- Package Java Maven application
+- Test Java application
+- Docker
+  - Dockerfile
+  - Build Docker image
+  - Run Docker containers
+  - Use Kubernetes Docker daemon
+  - Docker Registry 
+  - SSH into Docker images
+  - Connecting Docker containers
+  - Inspect Docker Containers
+  
+--- 
+## Part 6: Build and Test Your Microservices Application with OpenShift on Your Own Machine with CodeReady Containers
+  
+### Agenda
+In this section you will learn:
+- Install/download prerequisites 
+- Package Java Maven application
+- Test Java application
+- Docker
+  - Dockerfile
+  - Build Docker image
+  - Run Docker containers
+  - Use Kubernetes Docker daemon
+  - Docker Registry 
+  - SSH into Docker images
+  - Connecting Docker containers
+  - Inspect Docker Containers
+    
+  
