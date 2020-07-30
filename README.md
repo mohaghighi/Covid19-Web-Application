@@ -201,6 +201,14 @@ containers using simple commands and work-saving automation.
 So let's get started and build our first container image with Docker. 
 > The first step is to craft our dockerfile and the Dockerfile is essentially the build instructions to build the image. 
 
+
+
+![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide36.png)
+#### What is a Dockerfile?
+A set of build instructions to build the image in a file called "dockerfile".  
+#### Craft your Dockerfile
+![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide40.png)
+
 The first part is the FROM command, which tells docker what image to base this off 
 of. The FROM instruction sets the Base Image for subsequent instructions. It'll start 
 by pulling an image from the Public Repositories.  
@@ -236,12 +244,6 @@ network ports at runtime. The EXPOSE instruction does not actually publish the
 port. It functions as a type of documentation between the person who builds the 
 image and the person who runs the container, about which ports are intended to be 
 published.
-
-![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide36.png)
-#### What is a Dockerfile?
-A set of build instructions to build the image in a file called "dockerfile".  
-#### Craft your Dockerfile
-![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide40.png)
 
 In the case of our Data Parser Spring Boot application: 
 ```
