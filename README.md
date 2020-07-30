@@ -107,6 +107,17 @@ By the end of this series, you'll have a microservices application with 4 x cont
 
 --- 
 ## Part 2: Build your Microservice container with Docker. 
+
+Here's a quick look at what you're going to learn throughout this workshop series - 
+and how Docker fits into our learning jouIn this lab you'll learn about containers, the basics of containerising microservices 
+with Docker, how to run and connect docker containers and best practices for 
+building docker images based on your application services' requirements.  
+
+rney as a prerequisite for diving deep into Kubernetes and openshift.   
+In this lab, we'll containerise our application's microservices with Docker, and in 
+The next lab, we'll deploy and manage them with Kubernetes. Later we'll use 
+openshift to automate the entire process of containerising, deployment, scaling and 
+management with a few clicks from the openshift web console.  
   
 ### Agenda
 In this section you will learn:
@@ -125,6 +136,23 @@ In this section you will learn:
 
 ![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide26.png)
   
+In the previous labs, we broke down our application into several microservices 
+based on their functionalities and purposes, and in this lab we'll containerise them 
+with Docker, and use docker to run them. 
+Therefore, we convert our monolithic 
+application into a multi-container application.
+If you want to review how this application has been designed and how 
+microservices architecture optimised it, please refer to the previous workshop. 
+
+You may ask why Docker? 
+Well, Modern application development and app modernisation techniques consist of three important stages of Build, Deploy and Manage.
+Docker plays a vital role in the build stage, and even partially the deployment phase. 
+As you can see from this slide, for stages we're going to follow in this workshop series, Docker is responsible for all initial steps. 
+
+![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide32.png)
+  
+Let's start by clining the repos and packaging our Java application with Maven:
+
 ### Clone The Repositories
 ```
 git clone github.com/mohaghighi/covid19-web-application
@@ -144,6 +172,7 @@ Data Parser runs on port 8082. if you want to change th *Port Number*, you need 
 ```bash
 curl http://localhost:8082 
 ```
+Now we've ogot our application ready to be containerised with Docker. Before we dive deeper into Docker, let's explore what containers are and how docker fits in containerisation technology.  
 
 #### What is a container? 
 > Containers are executable units of software in which application code is packaged, along with its libraries and dependencies, in common ways so that they can be run anywhere, whether it be on desktop, traditional IT, or the cloud.
@@ -154,7 +183,6 @@ You may ask why Docker?
 Modern application development and app modernisation techniques consist of three important stages of Build, Deploy and Manage.
 Docker plays a vital role in the build stage, and even partially the deployment phase. 
 As you can see from this slide, for stages we're going to follow in this workshop series, Docker is responsible for all initial steps. 
-![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide32.png)
 
 ### Technology vs. Toolkit
 containers have been around for quite some time, and developers can create 
@@ -168,7 +196,46 @@ containers using simple commands and work-saving automation.
 ### Docker Image vs. Docker Container
 > Docker container image is a lightweight, standalone, executable package of software that includes everything needed to run an application: code, runtime, system tools, system libraries and settings. (only interacting with designated resources)
 
-> Container ****<ins>images become containers at runtime</ins>**** and in the case of Docker containers - images become containers when they run on Docker.
+> Container ****<ins>images become containers at runtime</ins>**** and in the case of Docker containers - images become containers when they run on Docker.  
+
+So let's get started and build our first container image with Docker. 
+> The first step is to craft our dockerfile and the Dockerfile is essentially the build instructions to build the image. 
+
+The first part is the FROM command, which tells docker what image to base this off 
+of. The FROM instruction sets the Base Image for subsequent instructions. It'll start 
+by pulling an image from the Public Repositories.  
+
+ARG defines instructions to define variables. ENV is similar to ENV but mainly meant 
+to provide default values for your future environment variables. ARG values are not 
+available after the image is built.  
+
+The COPY instruction copies new files or directories from <src> and adds them to 
+the filesystem of the container at the path <dest>.It can copy a file (in the same 
+directory as the Dockerfile) to the container.  
+
+The ADD instruction copies new files, directories or remote file URLs from <src> and 
+adds them to the filesystem of the image at the path <dest>.  
+
+The ENV instruction sets the environment variable <key> to the value <value>.  
+
+This is what runs within the container at build time. The RUN instruction will 
+execute any commands in a new layer on top of the current image and commit the 
+results.  
+
+An ENTRYPOINT allows you to configure a container that will run as an executable. 
+[should add '&' to run in the background]
+
+[Entry Point/CMD] ENTRYPOINT instruction allows you to configure a container that 
+will run as an executable. It looks similar to CMD, because it also allows you to 
+specify a command with parameters. The difference is ENTRYPOINT command 
+and parameters are not ignored when Docker container runs with command line 
+parameters.
+
+The EXPOSE instruction informs Docker that the container listens on the specified 
+network ports at runtime. The EXPOSE instruction does not actually publish the 
+port. It functions as a type of documentation between the person who builds the 
+image and the person who runs the container, about which ports are intended to be 
+published.
 
 ![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide36.png)
 #### What is a Dockerfile?
