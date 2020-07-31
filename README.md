@@ -1,4 +1,4 @@
-![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide1.png)
+![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/intro.png)
 # Covid-19 Data Analytic Microservices Application with Kubernetes and OpenShift
 
 We have seen a range data published on the impact of various parameters on the spread of covid-19, including population density, average number of people per household, ethnicity, weather data etc.
