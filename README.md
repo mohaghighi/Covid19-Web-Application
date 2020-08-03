@@ -27,7 +27,7 @@ This application has been designed as a template for designing your own analytic
 
 This workshop series will be focused on: 
 
-[Part 1: Cloud Native Development, Microservices and the Architecture Covid-19 Data Parser](https://github.com/mohaghighi/Covid19-Web-Application/blob/master/README.md#part-1-overall-architecture-of-the-parser-and-ui-applications)  
+[Part 1: Cloud Native Development, Microservices and the Architecture of our Covid-19 Data Parser](https://github.com/mohaghighi/Covid19-Web-Application/blob/master/README.md#part-1-overall-architecture-of-the-parser-and-ui-applications)  
 [Part 2: Build your Microservice container with Docker](https://github.com/mohaghighi/Covid19-Web-Application/blob/master/README.md#part-2-build-your-microservice-container-with-docker)  
 [Part 3: Deploy and manage your application with Kubernetes](https://github.com/mohaghighi/Covid19-Web-Application/blob/master/README.md#part-3-deploy-run-and-maange-your-docker-containers-with-kubernetes)  
 [Part 4: Deploy and manage your application with OpenShift on IBM Cloud](https://github.com/mohaghighi/Covid19-Web-Application/blob/master/README.md#part-4-build-deploy-and-manage-your-microservices-application-with-openshift)   
@@ -40,7 +40,7 @@ Here is what you will learn by the end of this workshop series:
   
 ![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide2.png)
 --- 
-## Part 1: Overall architecture of the Parser and UI applications. 
+## Part 1: Cloud Native Development, Microservices and the Architecture of our Covid-19 Data Parser
 
 
 ### Agenda
