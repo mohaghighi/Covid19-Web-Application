@@ -1261,9 +1261,6 @@ If you want to carry on using the CLI tool, make sure you've set your environmen
  crc stop
  ```
  
- 
- 
-![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide194.png)
   
 --- 
 ## Part 7: Build your CI/CD pipelines with Jenkins and Tekton. 
