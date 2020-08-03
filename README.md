@@ -1203,7 +1203,10 @@ Underneath each workspace is a stack, a container image that includes language r
 
 
 ---
-## Part 6: Build, and Test Your Applications with CodeReady Containers.
+## Part 6: Build, and Test Your Applications with CodeReady Containers.  
+![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide193.png)
+CodeReady Containers brings a minimal, preconfigured OpenShift 4.x to your local laptop or desktop computer for development and testing purposes. CodeReady Containers is delivered as a Red Hat Enterprise Linux virtual machine that supports native hypervisors for Linux, macOS, and Windows 10.  
+CodeReady Containers is the quickest way to get started building OpenShift clusters. It is designed to run on a local computer to simplify setup and testing, and emulate the cloud development environment locally with all the tools needed to develop container-based apps. 
   
 ### Agenda
 In this section you will learn:
@@ -1216,8 +1219,51 @@ In this section you will learn:
   - From Containers
   - From Dockerfile
 - Deploy with Source to Image from the console
-- View our resources from the CLI
+- View our resources from the CLI  
 
+Download CodeReady Containers (CRC) from this link after signing up for a Red Hat Developer account. 
+![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide194.png)
+  
+Once CRC is downloaded, set it up by following these commands:
+ 
+ ```
+ crc setup
+ ```
+Then start your CRC:
+ ```
+ crc start
+ ```
+You will be asked to enter your **pull secret**. Retreive it form your Red Hat account:
+![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide195.png)
+
+Once CRC starts, you will be provided with dedicated URLs to log into your CRC webconsole as an admin or developer:
+![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide198.png)
+
+You will need the username and password in order to log into the web console.
+![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide199.png)
+
+If you want to carry on using the CLI tool, make sure you've set your environmental parameters to interact with CRC using OC commands:
+ ```
+ eval $(crc oc-env)
+ ```
+ some extra options to include in your CRC:  
+ 
+ You can define your allocated resources by adding options to control the nuber CPU cores, memory and the Hypervisor used by CRC
+ ```
+ crc start --cpus [cpu cores] --memory [mib] --vm-driver [vm]   
+ ```
+ by default CRC loads this way
+ ```
+ crc start --cpus [4] --memory [8192] --vm-driver [hyperkit]   
+ ```
+ To stop CRC
+ ```
+ crc stop
+ ```
+ 
+ 
+ 
+![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide194.png)
   
 --- 
 ## Part 7: Build your CI/CD pipelines with Jenkins and Tekton. 
