@@ -40,8 +40,9 @@ Here is what you will learn by the end of this workshop series:
   
 ![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide2.png)
 --- 
-## Part 1: Cloud Native Development, Microservices and the Architecture of our Covid-19 Data Parser
+## Part 1: Cloud Native Development, Microservices and the Architecture of our Covid-19 Data Parser  
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/j1jLtp4_6Kg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Agenda
 In this section you will learn:
