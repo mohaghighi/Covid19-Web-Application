@@ -42,7 +42,11 @@ Here is what you will learn by the end of this workshop series:
 --- 
 ## Part 1: Cloud Native Development, Microservices and the Architecture of our Covid-19 Data Parser  
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/j1jLtp4_6Kg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div align="center">
+      <a href="https://youtu.be/j1jLtp4_6Kg">
+         <img src="https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Part1-youtube.png">
+      </a>
+</div>
 
 ### Agenda
 In this section you will learn:
@@ -108,7 +112,13 @@ By the end of this series, you'll have a microservices application with 4 x cont
 
 
 --- 
-## Part 2: Build your Microservice container with Docker. 
+## Part 2: Build your Microservice container with Docker.  
+
+<div align="center">
+      <a href="https://youtu.be/RMe2S30Cggc">
+         <img src="https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Part2-youtube.png">
+      </a>
+</div>
 
 Here's a quick look at what you're going to learn throughout this workshop series - 
 and how Docker fits into our learning jouIn this lab you'll learn about containers, the basics of containerising microservices 
@@ -394,7 +404,13 @@ This step is not needed here, is intended to let you know what we will use minik
 
 
 --- 
-## Part 3: Deploy, Run and Maange your Docker Containers with Kubernetes. 
+## Part 3: Deploy, Run and Maange your Docker Containers with Kubernetes.  
+  
+<div align="center">
+      <a href="https://youtu.be/zU7ReT8tZfo">
+         <img src="https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Part3-youtube.png">
+      </a>
+</div>  
   
 ### Agenda
 In this section you will learn:
@@ -756,6 +772,12 @@ kubectl log –l app=[container name]
 ![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide103.png)
 --- 
 ## Part 4: Build, Deploy and Manage your Microservices Application with OpenShift.
+  
+<div align="center">
+      <a href="https://youtu.be/ewj_jG4TgkE">
+         <img src="https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Part4-youtube.png">
+      </a>
+</div>    
   
 ### Agenda
 In this section you will learn:
