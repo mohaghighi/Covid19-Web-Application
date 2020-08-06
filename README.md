@@ -9,9 +9,20 @@ This is a multipart workshop series on building,
 deploying and managing microservices applications with Kubernetes and openshift. 
 
 Our workshop series is around covid-19 data retrieval, parsing and analytic. This is a series of 7 x hands-on workshops, teaching you how to retrieve covid-19 data from an authentic source, make them securely available through REST APIS on kubernetes and Openshift.  
-The primary applications are developed in Java Spring Boot, but we will add more features and apply analytical services on the data in the form of microservices written in different programming languages.  
+The primary applications are developed in Java Spring Boot, but we will add more features and apply analytical services on the data in the form of microservices written in different programming languages. 
 
-In this workshop series, firstly take a look at the key features of our application and how it was developed in microsevices architecture. We'll then explore ways to contianerise our application with Docker. in Lab 3, We'll deploy and manage our application with Kubernetes. In Part 4, we'll deploy our application onto Openshift on IBM Cloud using OpenShift CLI tool and Web Console. In Lab 6, we'll set up a CodeReady Workspace to share an instance of workspace with others with ero configuration on the recipient side. In Lab 7, We'll build and test out application on a local version of Openshift Cluster, CodeReady containers. Finally, in part 8 we'll automate our CI/CD pipeline to push our code into production with zero downtime.
+### Watch the full series on YouTube!
+
+
+| [![Watch Part 1 on YouTube!](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Part1-youtube.png)](https://youtu.be/j1jLtp4_6Kg)   | [![Watch Part 2 on YouTube!](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Part2-youtube.png)](https://youtu.be/RMe2S30Cggc)          |
+| :-------------: |:-------------:|
+| `40 Minutes` | `50 Minutes` |
+| [![Watch Part 3 on YouTube!](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Part3-youtube.png)](https://youtu.be/zU7ReT8tZfo)     | [![Watch Part 4 on YouTube!](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Part4-youtube.png)](https://youtu.be/zU7ReT8tZfo)    |
+| `80 Minutes` | `125 Minutes` |
+
+We highly recomnmend that you follow the workshops by watching the videos as they are hands-on and much more comprehensive than the instructions given here.  
+
+In this workshop series, we will firstly take a look at the key features of our application and how it was developed in microsevices architecture. We'll then explore ways to contianerise our application with Docker. in Lab 3, We'll deploy and manage our application with Kubernetes. In Part 4, we'll deploy our application onto Openshift on IBM Cloud using OpenShift CLI tool and Web Console. In Lab 6, we'll set up a CodeReady Workspace to share an instance of workspace with others with ero configuration on the recipient side. In Lab 7, We'll build and test out application on a local version of Openshift Cluster, CodeReady containers. Finally, in part 8 we'll automate our CI/CD pipeline to push our code into production with zero downtime.
 
 As a reminder, all the steps taught in this course are generic and applicable to 
 application developed in any programming languages or platforms. but to simplify 
