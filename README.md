@@ -700,13 +700,15 @@ minikube ssh
 curl [LoadBalancer Cluster IP(internal)]:[Port]/hello/ 
 ```
 
-![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide138.png)
+### Rolling out updates
+
+![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide91.png)
 
 Rolling updates allow Deployments' update to take place with zero downtime by incrementally updating Pods instances with new ones. Performing updates without affecting application availability.
 
 ![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide139.png)
 
-In this part we're going to update our image to the parser for covid-19 mortality data reflect the number of death in every country country and region.  
+In this part we're going to update our image to the parser for covid-19 mortality data, which reflects the number of death in every country country and region.  
 ```
 kubectl set image deployment/[deployment name]  [container]=[new image]
 ```
