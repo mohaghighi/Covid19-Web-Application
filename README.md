@@ -228,8 +228,6 @@ thorough understanding of the architecture and causing their code to break, and
 operation engineers blamed devs for delivering something, which was not scalable, 
 ready for production and demands too much underlying resources.
 
-[Next Slide]
-
 When you look at it from developers' perspective, they often spend their 
 days building something new or debugging something that's broken, which is why 
 they want a solution that simplifies the development process, making it faster and 
@@ -293,13 +291,10 @@ CodeReady Containers - https://developers.redhat.com/products/codeready-containe
 (Optional) OpenShift v4.3 on IBM Cloud - https://www.ibm.com/cloud/openshift 
 
 
-### Microservices
-![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide14.png)
+By the end of this series, you'll have 4 x containerised microservices deployed and running on Kubernetes, OpenShift cluster, CodeReady Containers, CodeReady Workspaces. 
+![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide17.png)  
 
-![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide16.png)
-
-By the end of this series, you'll have a microservices application with 4 x containers running in your Kubernetes/OpenShift cluster. 
-![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide17.png)
+Those Microservices are:
 
 - Data Parser written in Java. 
 - UI frontend written in Java to generate HTML and Node.js. 
