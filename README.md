@@ -20,7 +20,7 @@ The primary applications are developed in Java Spring Boot, but we will add more
 | [![Watch Part 3 on YouTube!](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Part3-youtube.png)](https://youtu.be/zU7ReT8tZfo)     | [![Watch Part 4 on YouTube!](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Part4-youtube.png)](https://youtu.be/zU7ReT8tZfo)    |
 | `80 Minutes` | `125 Minutes` |
 
-We highly recomnmend that you follow the workshops by watching the videos as they are hands-on and much more comprehensive than the instructions given here.  
+We highly recomnmend that you follow the workshops by watching the videos as they are hands-on and much more comprehensive than the instructions given here. All videos are available from the links above or directly from this YouTube [playlist](https://www.youtube.com/playlist?list=PLKBDkjUynCxj2DpjEAWfCsW88M473SWrg)
 
 In this workshop series, we will firstly take a look at the key features of our application and how it was developed in microsevices architecture. We'll then explore ways to contianerise our application with Docker. in Lab 3, We'll deploy and manage our application with Kubernetes. In Part 4, we'll deploy our application onto Openshift on IBM Cloud using OpenShift CLI tool and Web Console. In Lab 6, we'll set up a CodeReady Workspace to share an instance of workspace with others with ero configuration on the recipient side. In Lab 7, We'll build and test out application on a local version of Openshift Cluster, CodeReady containers. Finally, in part 8 we'll automate our CI/CD pipeline to push our code into production with zero downtime.
 
