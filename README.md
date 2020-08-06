@@ -59,17 +59,202 @@ Here is what you will learn by the end of this workshop series:
       </a>
 </div>
 
-### Agenda
+### Agenda  
+
 In this section you will learn:
+- Introduction to this workshop series 
+- Cloud Native Application Development
+  - Advantages
+- Microservices
+  - Why microservices?
+  - Monolithic Applications
 - An overview of Covid-19 data analytic web application
-- Quick summary
+  - Quick summary
   - Data source & format
   - Data Parser
   - REST APIs endpoints
+- Application Demo  
 
-- Microservices
-  - Why microservices?
-  - Orchestration with Kubernetes
+Before we embark on this long journey together, you are probably interested to know who we are, and what we do? 
+I head up IBM's developer ecosystems across Europe and fortunate to be working with an awesome team of developer advocates who are passionately 
+engaging developers in various clients and open source communities all around the world!
+
+![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/ExSlide/Slide2.png)
+
+As developer advocates working for IBM, the pioneer of many technologies and inventions with a history of over a century, we have certain messages that we must get to the world as a whole, and that means to all developers all around the globe as much as possible using a special methodology known as IBM Developer Way: Code, Content, Community. check out https://www.ibm.com/opensource/story/ to learn more.
+
+![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/ExSlide/Slide3.png)
+
+We do that by being out there speaking at various developer conferences, major tech events, digital 
+channels and contributing to many open source projects.  At the same time, not only we do the 
+outbound, but also the inbound. We have to be out there talking to users, who's got their hands on 
+the technology, to get their feedback and pain points, and bring that information back to product 
+management and engineering teams to better improve the product, so the user experience becomes vastly 
+superior to what it was. So that combination of outbound and inbound activities defines who we are, and keeps us 
+enthusiastic to make even better and deeper impact.  
+
+![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/ExSlide/Slide4.png)
+
+Our agenda for this workshop seroes, is literally ***The Pillars of Cloud-Native Development*** - and the ultimate 
+goal of this series is to teach you: how to automate the entire application development process, so, 
+you as a developer, only focus on coding and eventually let openshift take care of all the heavy-
+lifting and tedious tasks.  
+Or to put it in the developers' context, all you will need to do is **"Commit"** and **"Push"**.
+
+![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide6.png)
+
+Further to simplify our learning journey and make it use-case oriented, these workshops are 
+designed around an application of a popular topic. Our application combines multiple containerised 
+microservices for parsing covid-19 time-series data, for the number of positive cases and mortality 
+rates in different countries and regions.So you get to experiment with a variety of tools and technologies around a use-case.
+
+Here is a quck overview of our journey into the world cloud-native development: 
+
+- In this introductory part, we'll learn about cloud native application development, the 
+benefits of microservices architecture, and the motivations behind their vast adoption. 
+We'll then take a quick tour of our covid-19 application and how it's been designed. 
+
+- In part 2, you'll learn how to use Docker as the de-facto standard to containerise and 
+test your applications.
+- In part 3, you'll learn about containers orchestration, and how to deploy and scale 
+your application on Kubernetes. -
+- In Part 4, we'll experience how openshift simplifies and secures your orchestration tasks 
+by automating the steps taken with Kubernetes. We'll firstly use the CLI tool to 
+deploy and scale our built containers. And later use Openshift web console to deploy 
+our application only using its source-code with a few clicks. That powerful feature for 
+developers is called S2I or Source-to-image. 
+- In Part 5, we'll explore how codeready workspaces helps teams build with speed, 
+Agility, security and most notably code: in production from anywhere. 
+- In part 6, you'll skip managed openshift, and instead use CodeReady Containers to 
+build and test out your openshift deployment locally on your machine. 
+- And finally, in Part 7, we will go even further with automation to set up CI/CD or 
+continuous Integration and Continuous delivery to let openshift completely take care 
+of the entire process from development to production. 
+
+As I have mentioned earlier, every lab in this series focuses on an essential step for building cloud native microservices 
+applications.  
+Well, you may ask what is cloud native, how is that related to microservices, and more 
+importantly why developers should educate themselves on those?
+
+### Cloud Native 
+
+Cloud native refers to how an application is built and deployed, rather than where the 
+application resides.  
+![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/ExSlide/Slide6.png)
+
+It basically defines that the application must be built, delivered and operated in a way that 
+the it is not hard-wired to any infrastructure.
+
+When we speak with engineers and IT execs in the top firms in financial services, manufacturing, automotive, defence, medical, public services, 
+etc, almost all of them host their development/production solutions in multiple clouds (private, public or hybrid). 
+
+For those firms, seamless 
+migration from one cloud platform to another, being able to update their solutions 
+with the latest technology and innovation and scaling on demand, with zero-
+downtime whilst maintaining the highest security measures at every level are their 
+top priorities.
+As you can see, those priorities are around the application itself rather than where it 
+resides. And Cloud Native development provides all those benefits if implemented 
+in the right way and using the right tools.
+  
+For application developers and IT execs, here are the key drivers in adopting cloud 
+native application development:
+- **Performance Improvement :** Improving application performance and Reducing application downtime and associated costs.
+- **Flexibility and Speed :** Quicker development and roll-out of application enhancements/new features, Easier application management, Greater flexibility to 
+scale app resources up or down automatically to meet real-time changes in demand.
+- **Widespread Adoption :** Over half of new applications to be developed in the next year will be on cloud. Among current adopters of the model, 53 percent of applications are cloud-native.  
+
+![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/ExSlide/Slide8.png)
+
+But more importantly IT execs consider cloud-native app development as the key driver for cultural 
+transformation for their tech teams:
+•	Small teams own specific components of the overall application
+•	Collaboration between application developers and IT operations experts
+•	Continuously and centrally integrating source code updates across the team
+•	A pipeline that deploys apps in development, test, staging and production environments
+
+***Now how does cloud native development make those happen?*** By relying on microservices architecture.  
+
+![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/ExSlide/Slide9.png)
+
+Microservices architecture is the building block and most essential ingredient of cloud native 
+applications.  
+ 
+- A cloud native application consists of discrete, reusable components known as microservices that are designed to integrate into any cloud environment.  
+In its core, the microservice architecture advocates partitioning large monolithic applications into smaller independent services that communicate with each other by using HTTP and messages.  
+
+If you take look at the conversion of this monolithic business application into a number of Microservices according to their business capabilities, you'll notice several points:
+
+- These microservices act as building blocks and are often packaged in containers.  
+- Microservices work together as a whole to comprise an application, yet each can be independently scaled, continuously improved, and quickly iterated through automation and orchestration processes.  
+- The flexibility of each microservice adds to the agility and continuous improvement of cloud-
+native applications.  
+
+### Monolithic Application
+
+Before we dive deeper into microservices, let's take a look at the type of application 
+Used to be developed in the traditional way or as we call it: ***Monolithic application***  
+
+
+In the old days when agility, time to market and rapid application deployment 
+weren't as vital as they are today, developers built a product, and add features to it 
+over time. As new features were added, the application size grew bigger and bigger 
+in size and complexity. 
+
+![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/ExSlide/Slide11.png)
+
+Applications were built to run on VMs, with a massive operating system, libraries, 
+dependencies and a single database attached to the entire application. As demand 
+grew higher, scaling the application was literally spinning up new VMs and adding more machine to the infrastructure. Different services in the monolithic 
+applications were tightly integrated and failing one part of the application caused 
+the entire application to become unresponsive or unusable for clients. 
+Failures aside, when making updates, performing maintenance or adding a new 
+service, the entire application must have been rebuilt and deployed again. 
+ If new updates happened to cause the application 
+to fail over time, the entire application had to brought down in order to fix the 
+problem. Identifying and fixing the error was a tedious process and never 
+guaranteed to succeed in a short amount of time.  
+
+On the other hand, developers who worked on a project often had to program in the 
+same programming language and use common platforms and tools to keep their 
+individual parts compatible with others. 
+
+Scaling a single part of monolithic application in most cases wasn't possible unless deployed on a separate VM. That required the entire application to be updated with additional resources for the entire application instead of individual services. 
+That is not all.. Monolithic application also disrupted teamwork and prevented 
+collaboration between developers and operation engineers. There always existed a 
+massive tension between the two teams, pointing fingers every time something 
+went wrong. Developers used to blame operation engineers for not having a 
+thorough understanding of the architecture and causing their code to break, and 
+operation engineers blamed devs for delivering something, which was not scalable, 
+ready for production and demands too much underlying resources.
+
+[Next Slide]
+
+When you look at it from developers' perspective, they often spend their 
+days building something new or debugging something that's broken, which is why 
+they want a solution that simplifies the development process, making it faster and 
+easier. The faster they can improve existing apps or find errors in the code, the 
+more time they have to learn new skills.
+
+![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/ExSlide/Slide12.png)
+
+The benefits of microservices - agility, shorter development time, flexibility - help 
+developers build something more robust faster and with fewer problems. The 
+challenge some developers face, though, whether due to the culture or ingrained 
+processes within an organization, is making the shift to building in a microservices 
+architecture.
+
+And that's why we've designed this course for you to learn the essential knowledge 
+to get started with Microservices, containerization and orchestration platforms.
+
+![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/ExSlide/Slide13.png)
+
+This is how our course is going to teach you the steps involved in cloud native development. 
+I've already broken down the application into several Microservices --> off the slide -- 
+
+Before we view the application, here is a quick summary of the architecture and 
+components. 
+
   
 ![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide4.png)
 Our application has been developed in Java and Spring Boot framework. It provides 
