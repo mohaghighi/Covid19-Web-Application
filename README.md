@@ -19,6 +19,8 @@ The primary applications are developed in Java Spring Boot, but we will add more
 | `40 Minutes` | `50 Minutes` |
 | [![Watch Part 3 on YouTube!](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Part3-youtube.png)](https://youtu.be/zU7ReT8tZfo)     | [![Watch Part 4 on YouTube!](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Part4-youtube.png)](https://youtu.be/zU7ReT8tZfo)    |
 | `80 Minutes` | `125 Minutes` |
+| [![Watch Part 5 on YouTube!](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Part5-youtube.png)](https://youtu.be/ewj_jG4TgkE)     | Coming Soon  |
+| `45 Minutes` | `30 Minutes` |
 
 We highly recomnmend that you follow the workshops by watching the videos as they are hands-on and much more comprehensive than the instructions given here. All videos are available from the links above or directly from this YouTube [playlist](https://www.youtube.com/playlist?list=PLKBDkjUynCxj2DpjEAWfCsW88M473SWrg)
 
@@ -1333,6 +1335,12 @@ oc rollout status deployment/[deployment Name]
 
 --- 
 ## Part 5: Build, Deploy and Share Your Applications with CodeReady Workspaces. 
+
+<div align="center">
+      <a href="https://youtu.be/ewj_jG4TgkE">
+         <img src="https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Part5-youtube.png">
+      </a>
+</div>
 
 In this lab we'll explore one of the most exciting features of OpenShift for developers. We'll explore how codeready workspaces helps teams build with speed, Agility, security and most notably code: in production from anywhere. And by anywhere, it truly means anywhere as we'll find out shortly.  
 
