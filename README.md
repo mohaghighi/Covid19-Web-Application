@@ -1337,7 +1337,7 @@ oc rollout status deployment/[deployment Name]
 ## Part 5: Build, Deploy and Share Your Applications with CodeReady Workspaces. 
 
 <div align="center">
-      <a href="https://youtu.be/r2Gd_Hd_ROI">
+      <a href="https://youtu.be/Ok16HYkoKac">
          <img src="https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Part5-youtube.png">
       </a>
 </div>
