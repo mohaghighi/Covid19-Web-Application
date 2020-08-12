@@ -14,12 +14,12 @@ The primary applications are developed in Java Spring Boot, but we will add more
 ### Watch the full series on YouTube!
 
 
-| [![Watch Part 1 on YouTube!](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Part1-youtube.png)](https://youtu.be/j1jLtp4_6Kg)   | [![Watch Part 2 on YouTube!](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Part2-youtube.png)](https://youtu.be/RMe2S30Cggc)          |
+| [![Watch Part 1 on YouTube!](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Part1-youtube.png)](https://youtu.be/80IaX6bNjQg)   | [![Watch Part 2 on YouTube!](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Part2-youtube.png)](https://youtu.be/WczXDqxjNLQ)          |
 | :-------------: |:-------------:|
 | `40 Minutes` | `50 Minutes` |
-| [![Watch Part 3 on YouTube!](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Part3-youtube.png)](https://youtu.be/zU7ReT8tZfo)     | [![Watch Part 4 on YouTube!](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Part4-youtube.png)](https://youtu.be/zU7ReT8tZfo)    |
+| [![Watch Part 3 on YouTube!](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Part3-youtube.png)](https://youtu.be/t8iKnYV3E94)     | [![Watch Part 4 on YouTube!](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Part4-youtube.png)](https://youtu.be/MTXPUHbnvL0)    |
 | `80 Minutes` | `125 Minutes` |
-| [![Watch Part 5 on YouTube!](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Part5-youtube.png)](https://youtu.be/ewj_jG4TgkE)     | Coming Soon  |
+| [![Watch Part 5 on YouTube!](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Part5-youtube.png)](https://youtu.be/Ok16HYkoKac)     | Coming Soon  |
 | `45 Minutes` | `30 Minutes` |
 
 We highly recomnmend that you follow the workshops by watching the videos as they are hands-on and much more comprehensive than the instructions given here. All videos are available from the links above or directly from this YouTube [playlist](https://www.youtube.com/playlist?list=PLKBDkjUynCxj2DpjEAWfCsW88M473SWrg)
@@ -56,7 +56,7 @@ Here is what you will learn by the end of this workshop series:
 ## Part 1: Cloud Native Development, Microservices and the Architecture of our Covid-19 Data Parser  
 
 <div align="center">
-      <a href="https://youtu.be/j1jLtp4_6Kg">
+      <a href="https://youtu.be/80IaX6bNjQg">
          <img src="https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Part1-youtube.png">
       </a>
 </div>
@@ -308,7 +308,7 @@ Those Microservices are:
 ## Part 2: Build your Microservice container with Docker.  
 
 <div align="center">
-      <a href="https://youtu.be/RMe2S30Cggc">
+      <a href="https://youtu.be/WczXDqxjNLQ">
          <img src="https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Part2-youtube.png">
       </a>
 </div>
@@ -600,7 +600,7 @@ This step is not needed here, is intended to let you know what we will use minik
 ## Part 3: Deploy, Run and Maange your Docker Containers with Kubernetes.  
   
 <div align="center">
-      <a href="https://youtu.be/zU7ReT8tZfo">
+      <a href="https://youtu.be/t8iKnYV3E94">
          <img src="https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Part3-youtube.png">
       </a>
 </div>  
@@ -969,7 +969,7 @@ kubectl log –l app=[container name]
 ## Part 4: Build, Deploy and Manage your Microservices Application with OpenShift.
   
 <div align="center">
-      <a href="https://youtu.be/ewj_jG4TgkE">
+      <a href="https://youtu.be/MTXPUHbnvL0">
          <img src="https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Part4-youtube.png">
       </a>
 </div>    
@@ -1337,7 +1337,7 @@ oc rollout status deployment/[deployment Name]
 ## Part 5: Build, Deploy and Share Your Applications with CodeReady Workspaces. 
 
 <div align="center">
-      <a href="https://youtu.be/ewj_jG4TgkE">
+      <a href="https://youtu.be/r2Gd_Hd_ROI">
          <img src="https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Part5-youtube.png">
       </a>
 </div>
