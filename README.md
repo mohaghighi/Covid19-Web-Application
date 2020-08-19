@@ -1453,11 +1453,12 @@ Here is your in-browser IDE with the sample project. you can view the files and 
 Make sure to check out the video for the extra steps and how we can make changes in the code and see the end result in production.  
 Here's the summary of what we have learnt through this lab. 
 ![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide187.png)
-And here's the summary of what we have learnt togehter so far:  
+  
+And here's the summary of what we you have learnt throught this series so far:  
 ![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide188.png)  
-
+  
 [ Back to the table of content ⇪](https://github.com/mohaghighi/Covid19-Web-Application/blob/master/README.md#table-of-contents)  
-
+  
 ---
 ## Part 6: Build, and Test Your Applications with CodeReady Containers.  
 ![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide193.png)
@@ -1516,10 +1517,9 @@ If you want to carry on using the CLI tool, make sure you've set your environmen
  ```
  crc stop
  ```
- 
-
-[ Back to the table of content ⇪](https://github.com/mohaghighi/Covid19-Web-Application/blob/master/README.md#table-of-contents)   
-
+  
+[ Back to the table of content ⇪](https://github.com/mohaghighi/Covid19-Web-Application/blob/master/README.md#table-of-contents)  
+  
 --- 
 ## Part 7: Build your CI/CD pipelines with Jenkins and Tekton. 
   
