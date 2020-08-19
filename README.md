@@ -308,7 +308,7 @@ Those Microservices are:
 
 
 
-[ Back to the table of content ⇪](https://github.com/mohaghighi/Covid19-Web-Application/blob/master/README.md#table-of-contents)  
+[ Back to the table of contents ⇪](https://github.com/mohaghighi/Covid19-Web-Application/blob/master/README.md#table-of-contents)  
 --- 
 ## Part 2: Build your Microservice container with Docker.  
 
@@ -601,7 +601,7 @@ This step is not needed here, is intended to let you know what we will use minik
 ![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide55.png)
 
 
-[ Back to the table of content ⇪](https://github.com/mohaghighi/Covid19-Web-Application/blob/master/README.md#table-of-contents)  
+[ Back to the table of contents ⇪](https://github.com/mohaghighi/Covid19-Web-Application/blob/master/README.md#table-of-contents)  
 --- 
 ## Part 3: Deploy, Run and Maange your Docker Containers with Kubernetes.  
   
@@ -979,7 +979,7 @@ kubectl log –l app=[container name]
 Here the summary of what we have learnt in this section:  
 ![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide103.png)
 
-[ Back to the table of content ⇪](https://github.com/mohaghighi/Covid19-Web-Application/blob/master/README.md#table-of-contents)  
+[ Back to the table of contents ⇪](https://github.com/mohaghighi/Covid19-Web-Application/blob/master/README.md#table-of-contents)  
 --- 
 ## Part 4: Build, Deploy and Manage your Microservices Application with OpenShift.
   
@@ -1348,7 +1348,7 @@ oc rollout status deployment/[deployment Name]
 
 ![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide141.png)
 
-[ Back to the table of content ⇪](https://github.com/mohaghighi/Covid19-Web-Application/blob/master/README.md#table-of-contents)  
+[ Back to the table of contents ⇪](https://github.com/mohaghighi/Covid19-Web-Application/blob/master/README.md#table-of-contents)  
 --- 
 ## Part 5: Build, Deploy and Share Your Applications with CodeReady Workspaces. 
 
@@ -1457,8 +1457,7 @@ Here's the summary of what we have learnt through this lab.
 And here's the summary of what we you have learnt throught this series so far:  
 ![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide188.png)  
   
-[ Back to the table of content ⇪](https://github.com/mohaghighi/Covid19-Web-Application/blob/master/README.md#table-of-contents)  
-  
+[ Back to the table of contents ⇪](https://github.com/mohaghighi/Covid19-Web-Application/blob/master/README.md#table-of-contents)  
 ---
 ## Part 6: Build, and Test Your Applications with CodeReady Containers.  
 ![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide193.png)
@@ -1518,8 +1517,7 @@ If you want to carry on using the CLI tool, make sure you've set your environmen
  crc stop
  ```
   
-[ Back to the table of content ⇪](https://github.com/mohaghighi/Covid19-Web-Application/blob/master/README.md#table-of-contents)  
-  
+[ Back to the table of contents ⇪](https://github.com/mohaghighi/Covid19-Web-Application/blob/master/README.md#table-of-contents)  
 --- 
 ## Part 7: Build your CI/CD pipelines with Jenkins and Tekton. 
   
