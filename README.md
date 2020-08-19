@@ -306,8 +306,10 @@ Those Microservices are:
 - Analytical application wrtittn in Python Flask.  
 - Data Visulization application written in Node.js  
 
-  
-[ Back to the table of content ⇪](https://github.com/mohaghighi/Covid19-Web-Application/blob/master/README.md#table-of-contents)  
+
+<div align="right">  
+[ Back to the table of content ⇪](https://github.com/mohaghighi/Covid19-Web-Application/blob/master/README.md#table-of-contents)
+</div>  
 
 --- 
 ## Part 2: Build your Microservice container with Docker.  
