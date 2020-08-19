@@ -1519,6 +1519,7 @@ If you want to carry on using the CLI tool, make sure you've set your environmen
  
 
 [ Back to the table of content ⇪](https://github.com/mohaghighi/Covid19-Web-Application/blob/master/README.md#table-of-contents)   
+
 --- 
 ## Part 7: Build your CI/CD pipelines with Jenkins and Tekton. 
   
