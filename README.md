@@ -976,6 +976,7 @@ kubectl apply -f [fileName].yaml
 ```
 kubectl log –l app=[container name]
 ```
+Here the summary of what we have learnt in this section:  
 ![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide103.png)
 
 [ Back to the table of content ⇪](https://github.com/mohaghighi/Covid19-Web-Application/blob/master/README.md#table-of-contents)  
