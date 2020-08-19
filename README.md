@@ -956,13 +956,19 @@ Print services as Yaml
 kubectl get services –o yaml
 ```
 ## Using YAML to create resources 
-![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide97.png)
-![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide98.png)
-![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide99.png)
-![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide100.png)
-![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide101.png)
+  
+A sample YAML file to create a ***Pod*** with a specific container from the specified image  (i.e. my-app:v2) listening on Port 80:  
+![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide97.png)  
+A sample YAML file to create a ***Deployment*** with 2 replicas:  
+![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide98.png)  
+A sample YAML to create a NodePort ***Service*** and letting Kubernetes asign the ports automatically by leaving the ports config blank  
+![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide99.png)  
+A sample YAML to create ***Replicaset*** with 3 Replicas  
+![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide100.png)  
+A sample YAML to update the ***Replicaset*** to 6 Replicas
+![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide101.png)  
 
-### Once YAML file is crafted, here is how to apply it:
+### Once the YAML file is crafted, here is how to apply it:
 ```
 kubectl apply -f [fileName].yaml
 ```
