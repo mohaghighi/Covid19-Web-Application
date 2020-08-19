@@ -307,10 +307,8 @@ Those Microservices are:
 - Data Visulization application written in Node.js  
 
 
-<div align="right">  
-[ Back to the table of content ⇪](https://github.com/mohaghighi/Covid19-Web-Application/blob/master/README.md#table-of-contents)
-</div>  
 
+[ Back to the table of content ⇪](https://github.com/mohaghighi/Covid19-Web-Application/blob/master/README.md#table-of-contents)  
 --- 
 ## Part 2: Build your Microservice container with Docker.  
 
@@ -603,6 +601,7 @@ This step is not needed here, is intended to let you know what we will use minik
 ![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide55.png)
 
 
+[ Back to the table of content ⇪](https://github.com/mohaghighi/Covid19-Web-Application/blob/master/README.md#table-of-contents)  
 --- 
 ## Part 3: Deploy, Run and Maange your Docker Containers with Kubernetes.  
   
@@ -972,6 +971,8 @@ kubectl apply -f [fileName].yaml
 kubectl log –l app=[container name]
 ```
 ![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide103.png)
+
+[ Back to the table of content ⇪](https://github.com/mohaghighi/Covid19-Web-Application/blob/master/README.md#table-of-contents)  
 --- 
 ## Part 4: Build, Deploy and Manage your Microservices Application with OpenShift.
   
@@ -1340,6 +1341,7 @@ oc rollout status deployment/[deployment Name]
 
 ![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide141.png)
 
+[ Back to the table of content ⇪](https://github.com/mohaghighi/Covid19-Web-Application/blob/master/README.md#table-of-contents)  
 --- 
 ## Part 5: Build, Deploy and Share Your Applications with CodeReady Workspaces. 
 
@@ -1416,6 +1418,8 @@ Underneath each workspace is a stack, a container image that includes language r
 
 ### Install CodeReady Workspaces
 
+Please follow the video to install CodeReady Workspaces. Here are the screenshots to install codeready workspaces from the operatorhub on your openshift web concole.  
+
 ![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide175.png)
 ![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide176.png)
 ![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide177.png)
@@ -1432,6 +1436,7 @@ Underneath each workspace is a stack, a container image that includes language r
 ![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide188.png)
 
 
+[ Back to the table of content ⇪](https://github.com/mohaghighi/Covid19-Web-Application/blob/master/README.md#table-of-contents)  
 
 ---
 ## Part 6: Build, and Test Your Applications with CodeReady Containers.  
@@ -1492,7 +1497,8 @@ If you want to carry on using the CLI tool, make sure you've set your environmen
  crc stop
  ```
  
-  
+
+[ Back to the table of content ⇪](https://github.com/mohaghighi/Covid19-Web-Application/blob/master/README.md#table-of-contents)   
 --- 
 ## Part 7: Build your CI/CD pipelines with Jenkins and Tekton. 
   
