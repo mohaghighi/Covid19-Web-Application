@@ -1419,33 +1419,35 @@ Please follow the video to install CodeReady Workspaces. Here are the screenshot
 
 Installing CodeReady Workspaces in your OpenShift cluster is as simple as looking up its dedicated operator and installing from the OperatorHub within the OpenShift Console. 
 ![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide172.png)   
-The first step is to subscribe to the "CodeReady Workspaces" operator 
+The first step is to subscribe to the "CodeReady Workspaces" operator  
 ![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide175.png)  
-locate the "Installed Opeators" from the opeartor tab. Subscribed/installed operators will appear in this list:
+locate the "Installed Opeators" from the opeartor tab. Subscribed/installed operators will appear in this list:  
 ![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide176.png)  
-Click on the CodeReady Worksapces operator from the list and locate the "CodeReady Workspaces Cluster" on the right hand side:
+Click on the CodeReady Worksapces operator from the list and locate the "CodeReady Workspaces Cluster" on the right hand side:  
 ![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide177.png)  
-Here you need to create a CheCluster using the YAML template. Let's not make any changes and click on create to go ahead with the default configuration:
+Click on Create Che Cluster:  
 ![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide178.png)  
-Wait for the CheCluster to be built and become ready. You can click on the CheCluster whilst is being built to view some details about its status and its reosurces.
-![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide179.png)
-Several reosurces will be created in the background inlcuding new Pods, Services and Deployments. It can be viewed from the resources tab:
-![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide180.png)  
-Navigate back to the "Overview" tab to get access to the workspaces URL on the right hand side. The URL only become available when the workspace is ready. 
+Here you need to create a CheCluster using the YAML template. Let's not make any changes and click on create to go ahead with the default configuration:  
+![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide179.png)  
+Wait for the CheCluster to be built and become ready. You can click on the CheCluster whilst is being built to view some details about its status and its reosurces.  
+![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide180.png)
+Several reosurces will be created in the background inlcuding new Pods, Services and Deployments. It can be viewed from the resources tab:  
 ![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide181.png)  
-Since this is your first time accessing the workspaces, you need to resgistr/sign up as a new user:
-![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide182.png)
-After signinig up, you can use one of the templates to initiate your IDE with a sample project. There are plenty of options to choose from including Java, Node, Python and Go sample applications. You import your own project from Github (i.e. the Covid-19 application), choose "custome workspace" next to "Get Started" tab.
+Navigate back to the "Overview" tab to get access to the workspaces URL on the right hand side. The URL only become available when the workspace is ready.   
+![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide182.png)  
+Since this is your first time accessing the workspaces, you need to resgistr/sign up as a new user:  
 ![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide183.png)
-It takes a few minutes for the workspace IDE to initialised. 
-![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide184.png)  
-Here is your in-browser IDE with the sample project. you can view the files and resources from the left hand side. 
+After signinig up, you can use one of the templates to initiate your IDE with a sample project. There are plenty of options to choose from including Java, Node, Python and Go sample applications. You import your own project from Github (i.e. the Covid-19 application), choose "custome workspace" next to "Get Started" tab.  
+![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide184.png)
+It takes a few minutes for the workspace IDE to initialised.  
 ![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide185.png)  
-
-![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide186.png)
+Here is your in-browser IDE with the sample project. you can view the files and resources from the left hand side.  
+![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide186.png)  
+Make sure to check out the video for the extra steps and how we can make changes in the code and see the end result in production.  
+Here's the summary of what we have learnt through this lab. 
 ![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide187.png)
-![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide188.png)
-
+And here's the summary of what we have learnt togehter so far:  
+![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide188.png)  
 
 [ Back to the table of content ⇪](https://github.com/mohaghighi/Covid19-Web-Application/blob/master/README.md#table-of-contents)  
 
