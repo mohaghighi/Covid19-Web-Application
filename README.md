@@ -34,11 +34,11 @@ covid-19 data analytic application.
 At the beginning of every part, we take a quick look at our application. This is to 
 showcase the end result of what we do together in every part with respect the primary subject of each part.
 
-Our application also comes with a frontend <User Interface>(https://github.com/mohaghighi/Covid19-UI.git) that connects to our parsers and invokes the API endpoints to display data and showcase the power of microservices running as conainers on Kubernetes and Openshift. 
+Our application also comes with a frontend <User Interface>(https://github.com/mohaghighi/Covid19-UI.git) that connects to our parsers and invokes the API endpoints to display data and showcase the power of microservices running as conainers on Kubernetes and Openshift.  
 
 This application has been designed as a template for designing your own analytical microservices and deploying onto Kubernetes. 
 
-## Main Agenda
+## Table Of Contents
 
 This workshop series will be focused on: 
 
