@@ -525,7 +525,7 @@ docker build -t myui:v1 .
 ```
 > in case you haven't run the maven build and packaged the UI App, run this where mvnm file is located
 ```
-./mvnm clean install 
+./mvnw clean install 
 ```
 Now let's run the UI app on port 8081:
 ```
