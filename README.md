@@ -570,22 +570,29 @@ As you can see our UI and Parser apps are not part of the same network.
 ![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide48.png)
 
 Let's create a network and instruct our containers to connect to it
-```docker network create test 
+```
+docker network create test 
 ```
 let's stop our docker containers:
-```docker stop [container id]
+
+```
+docker stop [container id]
 ```
 Let's run our containers again, this time instructing them to join the new network we've just created
-```docker run -p [PortHost:PortContainer] [imageName] --net=test
+```
+docker run -p [PortHost:PortContainer] [imageName] --net=test
 ```
 Run UI application on test network:
-```docker run -p 8081:8081 myui:v1 --net=test
+```
+docker run -p 8081:8081 myui:v1 --net=test
 ```
 Run parser application on test network:
-```docker run -p 8082:8082 myapp:v1 --net=test
+```
+docker run -p 8082:8082 myapp:v1 --net=test
 ```
 Let's inspect our containers again and get their IP addresses based on thier new network
-```docker inspect [container name/ID]
+```
+docker inspect [container name/ID]
 ```
 
 if we try to ping our applications again, they should work fine.  
