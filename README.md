@@ -548,7 +548,9 @@ now let's try to ssh into our one of the docker containers and try to connect to
 To simulate the issue that we've just expereinced with the UI app, let's ssh into our UI and try to connect to our data parser from within that container. 
 ![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide46.png)
 
-```docker exec [container name/ID] -it
+->
+```
+docker exec [container name/ID] -it
 ```
 Here how we ssh into UI app
 ```
