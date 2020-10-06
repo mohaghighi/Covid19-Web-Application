@@ -365,8 +365,8 @@ Let's start by clining the repos and packaging our Java application with Maven:
 
 ### Clone The Repositories
 ```
-git clone github.com/mohaghighi/covid19-web-application
-git clone github.com/mohaghighi/covid19-UI
+git clone github.com/rapchic/Covid19-Web-Application
+git clone github.com/rapchic/Covid19-UI
 ```
 ### Package Spring Boot with Maven
 
@@ -410,8 +410,6 @@ containers using simple commands and work-saving automation.
 
 So let's get started and build our first container image with Docker. 
 > The first step is to craft our dockerfile and the Dockerfile is essentially the build instructions to build the image. 
-
-
 
 ![alt text](https://github.com/mohaghighi/Covid19-Web-Application/raw/master/images/Labs/Slide36.png)
 #### What is a Dockerfile?
