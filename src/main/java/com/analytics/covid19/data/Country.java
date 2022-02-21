@@ -27,7 +27,7 @@ public class Country implements Serializable {
     private String Lat;
     private String Long;
     
-    @Column( length = 10000 )
+    @Column( length = 100000 ) //Here is the length of data retrieved - increase/decrease accordingly
     private ArrayList<Data> DataSet=new ArrayList<>();
 
     
